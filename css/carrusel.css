@@ -1,0 +1,4 @@
+.carousel-img {
+    max-height: 70vh; /* Cambia este valor según tu preferencia */
+    object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
+}

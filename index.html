@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La paputienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/nvidia_logo_icon_169902.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Geist:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://imgs.search.brave.com/_EftGI8kd7ph3VmrkDQnuDPr--BnG9bD1Hov_MZ4-HU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL04vbnZpZGlh/LWxvZ28tRDZGMkI3/QjZDOS1zZWVrbG9n/by5jb20ucG5n" alt="NVIDIA Logo" width="200" height="38">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="btn" href="pages/carrito.html">Carrito <i class="bi bi-cart3"></i></a>
+                    <a id="theme-toggle" class="btn" onclick="toggleTheme()">Tema 
+                        <i class="bi bi-sun-fill" id="themeIcon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Hero en el lateral izquierdo -->
+            <div class="col-lg-3 d-flex flex-column align-items-start p-4">
+                <h1 class="display-4">La mejor potencia para tu PC</h1>
+                <p class="lead">Explora nuestra tienda de GPUs NVIDIA y potencia tu experiencia de juego.</p>
+                <a href="#productos" class="btn btn-success mt-3">Ver Productos</a>
+            </div>
+    
+            <!-- Carrusel de imágenes de GPUs en el lado derecho -->
+            <div class="col-lg-9">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/gif 3080.webp" class="d-block w-100 carousel-img" alt="GPU 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/rtx 4090 gif.webp" class="d-block w-100 carousel-img" alt="GPU 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ruta-imagen-gpu3.jpg" class="d-block w-100 carousel-img" alt="GPU 3">
+                        </div>
+                    </div>
+    
+                    <!-- Controles de navegación del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/tema.js"></script>
+</body>
+</html>

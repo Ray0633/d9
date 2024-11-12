@@ -1,0 +1,6 @@
+.navbar {
+    font-family: Geist;
+}
+.navbar-brand {
+    filter: drop-shadow(0 0 5px #01cf3f)
+}
